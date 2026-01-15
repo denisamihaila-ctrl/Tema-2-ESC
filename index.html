@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Techy Phrase Generator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <header class="header">
+      <div class="title-row">
+        <h1>Techy Phrase Generator</h1>
+        <span class="badge" id="badgeStatus" aria-label="Status badge">
+          <span class="badge-dot" aria-hidden="true"></span>
+          <span id="badgeText">Ready</span>
+        </span>
+      </div>
+      <p class="subtitle">
+        Aplicația consumă Techy API și afișează dinamic mesajul primit.
+      </p>
+    </header>
+
+    <section class="card" aria-live="polite">
+      <div class="card-top">
+        <div class="icon" aria-hidden="true">🤖</div>
+        <div class="card-text">
+          <h2>Fraza primită</h2>
+          <p id="phrase" class="phrase">Apasă butonul pentru a încărca o frază.</p>
+        </div>
+      </div>
+
+      <div class="controls">
+        <button id="btnRefresh" type="button">Generează o nouă frază</button>
+        <span id="statusText" class="status">Status: gata</span>
+      </div>
+
+      <div class="meta">
+        <h3>Metadate</h3>
+        <table class="meta-table">
+          <thead>
+            <tr>
+              <th>Câmp</th>
+              <th>Valoare</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Sursă</td>
+              <td id="metaSource">Techy API</td>
+            </tr>
+            <tr>
+              <td>Status</td>
+              <td id="metaStatus">—</td>
+            </tr>
+            <tr>
+              <td>Lungime (caractere)</td>
+              <td id="metaLength">—</td>
+            </tr>
+            <tr>
+              <td>Număr cuvinte</td>
+              <td id="metaWords">—</td>
+            </tr>
+            <tr>
+              <td>Încărcat la</td>
+              <td id="metaTime">—</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p id="errorBox" class="error" role="alert" hidden></p>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <small>API: <code>https://techy-api.vercel.app/api/json</code></small>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
