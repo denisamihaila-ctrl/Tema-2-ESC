@@ -1,5 +1,5 @@
 # Tema-2-ESC
-~Tema de casa 2 - Mihăilă Denisa-Maria - 3112b~
+Tema de casa 2 - Mihăilă Denisa-Maria - 3112b
 
 In tema aceasta voi crea o aplicație cu ajutorul HTML, CSS si JavaScript care genereaza random o fraza tehnica utilizând Techy API.
 
